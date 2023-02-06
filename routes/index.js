@@ -4,7 +4,7 @@ import { favInsight, getInsights, listInsights, removeInsight } from '../control
 const router = express.Router()
 
 router.route('/').get((req, res) => {
-    res.write(<h1>Growth.cx</h1>)
+    res.send('<h1>Growth.cx</h1>')
 })
 router.route('/getInsights').post(getInsights)
 router.route('/listInsights').get(listInsights)
